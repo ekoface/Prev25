@@ -1,0 +1,27 @@
+fun putint(x: int): void
+
+fun main(): int =
+    let
+        var x_1 : int
+        var x_2 : int
+        fun f1(): void =
+            let
+                var x1_1 : int
+                fun f2(): void =
+                    x1_1 = x1_1 + 1,
+                    x_2 = x_2 + 1
+            in
+                x_1 = x_1 + 1,
+                x1_1 = 1,
+                f2(),
+                putint(x1_1)
+            end
+
+    in
+        x_1 = 1,
+        x_2 = 1,
+        f1(),
+        putint(x_1),
+        putint(x_2)
+    end,
+    return 0

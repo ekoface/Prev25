@@ -1,0 +1,4 @@
+# to je komentar ## je se #
+fun main(): int =
+    
+    return 1

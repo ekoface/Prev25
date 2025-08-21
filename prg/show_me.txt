@@ -1,0 +1,296 @@
+'rm' -fr -fr test_malloc-*.xml test_malloc-*.html
+if java -cp ../bin:../src:../lib/antlr-4.13.2-complete.jar compiler.Compiler --xsl=../lib/xsl/ --logged-phase=all --target-phase=all  test_malloc.prev25 ; then for XML in `'ls' -1 test_malloc-*.xml` ; do xsltproc $XML -o `basename $XML xml`html; done ; fi
+:-) This is Prev25 compiler:
+RISC-V Instructions:
+L6:
+addi t61, t0, -8
+mv t8, t61
+li t62, 0
+sb t62, 0(t8)
+L8:
+addi t63, t0, -8
+mv t9, t63
+lb t64, 0(t9)
+mv t10, t64
+li t66, 20
+slt t65, t10, t66
+mv t11, t65
+beqz t11, L9
+j L20
+L20:
+j L10
+L9:
+addi t67, t0, 8
+mv t12, t67
+lb t68, 0(t12)
+mv t13, t68
+addi t69, t0, -8
+mv t14, t69
+lb t70, 0(t14)
+mv t15, t70
+li t72, 8
+mul t71, t15, t72
+mv t16, t71
+add t73, t13, t16
+mv t17, t73
+addi t74, t0, -8
+mv t18, t74
+lb t75, 0(t18)
+mv t19, t75
+sb t19, 0(t17)
+addi t76, t0, -8
+mv t20, t76
+addi t77, t0, -8
+mv t21, t77
+lb t78, 0(t21)
+mv t22, t78
+addi t79, t22, 1
+mv t23, t79
+sb t23, 0(t20)
+j L8
+L10:
+L7:
+L11:
+addi t80, t2, -8
+mv t24, t80
+li t81, 0
+sb t81, 0(t24)
+L13:
+addi t82, t2, -8
+mv t25, t82
+lb t83, 0(t25)
+mv t26, t83
+li t85, 20
+slt t84, t26, t85
+mv t27, t84
+beqz t27, L14
+j L21
+L21:
+j L15
+L14:
+mv a0, t2
+la t86, L2
+mv a1, t86
+call _puts
+mv t87, a0
+mv t28, t87
+addi t88, t2, -8
+mv t29, t88
+lb t89, 0(t29)
+mv t30, t89
+mv a0, t2
+mv a1, t30
+call _putint
+mv t90, a0
+mv t31, t90
+addi t91, t2, 8
+mv t32, t91
+lb t92, 0(t32)
+mv t33, t92
+addi t93, t2, -8
+mv t34, t93
+lb t94, 0(t34)
+mv t35, t94
+li t96, 8
+mul t95, t35, t96
+mv t36, t95
+add t97, t33, t36
+mv t37, t97
+lb t98, 0(t37)
+mv t38, t98
+mv a0, t2
+la t99, L3
+mv a1, t99
+mv a2, t38
+call _printInt
+mv t100, a0
+mv t39, t100
+addi t101, t2, -8
+mv t40, t101
+addi t102, t2, -8
+mv t41, t102
+lb t103, 0(t41)
+mv t42, t103
+addi t104, t42, 1
+mv t43, t104
+sb t43, 0(t40)
+j L13
+L15:
+L12:
+L16:
+addi t105, t4, 8
+mv t44, t105
+lb t106, 0(t44)
+mv t45, t106
+mv a0, t4
+mv a1, t45
+call _puts
+mv t107, a0
+mv t46, t107
+addi t108, t4, 16
+mv t47, t108
+lb t109, 0(t47)
+mv t48, t109
+mv a0, t4
+mv a1, t48
+call _putint
+mv t110, a0
+mv t49, t110
+mv a0, t4
+li t111, 10
+mv a1, t111
+call _putchar
+mv t112, a0
+mv t50, t112
+L17:
+L18:
+addi t113, t6, -8
+mv t51, t113
+li t114, 20
+li t116, 8
+mul t115, t114, t116
+mv t52, t115
+mv a0, t6
+mv a1, t52
+call _new
+mv t117, a0
+mv t53, t117
+sb t53, 0(t51)
+addi t118, t6, -8
+mv t54, t118
+mv a0, t6
+mv a1, t54
+call _set_array
+mv t119, a0
+mv t55, t119
+addi t120, t6, -8
+mv t56, t120
+mv a0, t6
+mv a1, t56
+call _print_array
+mv t121, a0
+mv t57, t121
+addi t122, t6, -8
+mv t58, t122
+lb t123, 0(t58)
+mv t59, t123
+mv a0, t6
+mv a1, t59
+call _del
+mv t124, a0
+mv t60, t124
+li t125, 0
+mv t7, t125
+j L19
+L19:
+RISC-V Instructions done.
+---------------------------
+Code Chunks:
+CodeChunk:
+Frame: compiler.phase.memory.MEM$Frame@6f1c29b7
+Entry Label: compiler.phase.memory.MEM$Label@4d6025c5
+Exit Label: compiler.phase.memory.MEM$Label@7f284218
+Statements:
+LABEL(L6)
+MOVE(TEMP(T8),BINOP(ADD,TEMP(T0),CONST(-8)))
+MOVE(MEM8(TEMP(T8)),CONST(0))
+LABEL(L8)
+MOVE(TEMP(T9),BINOP(ADD,TEMP(T0),CONST(-8)))
+MOVE(TEMP(T10),MEM8(TEMP(T9)))
+MOVE(TEMP(T11),BINOP(LTH,TEMP(T10),CONST(20)))
+CJUMP(TEMP(T11),NAME(L9),NAME(L20))
+LABEL(L20)
+JUMP(NAME(L10))
+LABEL(L9)
+MOVE(TEMP(T12),BINOP(ADD,TEMP(T0),CONST(8)))
+MOVE(TEMP(T13),MEM8(TEMP(T12)))
+MOVE(TEMP(T14),BINOP(ADD,TEMP(T0),CONST(-8)))
+MOVE(TEMP(T15),MEM8(TEMP(T14)))
+MOVE(TEMP(T16),BINOP(MUL,TEMP(T15),CONST(8)))
+MOVE(TEMP(T17),BINOP(ADD,TEMP(T13),TEMP(T16)))
+MOVE(TEMP(T18),BINOP(ADD,TEMP(T0),CONST(-8)))
+MOVE(TEMP(T19),MEM8(TEMP(T18)))
+MOVE(MEM8(TEMP(T17)),TEMP(T19))
+MOVE(TEMP(T20),BINOP(ADD,TEMP(T0),CONST(-8)))
+MOVE(TEMP(T21),BINOP(ADD,TEMP(T0),CONST(-8)))
+MOVE(TEMP(T22),MEM8(TEMP(T21)))
+MOVE(TEMP(T23),BINOP(ADD,TEMP(T22),CONST(1)))
+MOVE(MEM8(TEMP(T20)),TEMP(T23))
+JUMP(NAME(L8))
+LABEL(L10)
+LABEL(L7)
+
+CodeChunk:
+Frame: compiler.phase.memory.MEM$Frame@6ea2bc93
+Entry Label: compiler.phase.memory.MEM$Label@3116c353
+Exit Label: compiler.phase.memory.MEM$Label@f627d13
+Statements:
+LABEL(L11)
+MOVE(TEMP(T24),BINOP(ADD,TEMP(T2),CONST(-8)))
+MOVE(MEM8(TEMP(T24)),CONST(0))
+LABEL(L13)
+MOVE(TEMP(T25),BINOP(ADD,TEMP(T2),CONST(-8)))
+MOVE(TEMP(T26),MEM8(TEMP(T25)))
+MOVE(TEMP(T27),BINOP(LTH,TEMP(T26),CONST(20)))
+CJUMP(TEMP(T27),NAME(L14),NAME(L21))
+LABEL(L21)
+JUMP(NAME(L15))
+LABEL(L14)
+MOVE(TEMP(T28),CALL(NAME(_puts),0:TEMP(T2),8:NAME(L2)))
+MOVE(TEMP(T29),BINOP(ADD,TEMP(T2),CONST(-8)))
+MOVE(TEMP(T30),MEM8(TEMP(T29)))
+MOVE(TEMP(T31),CALL(NAME(_putint),0:TEMP(T2),8:TEMP(T30)))
+MOVE(TEMP(T32),BINOP(ADD,TEMP(T2),CONST(8)))
+MOVE(TEMP(T33),MEM8(TEMP(T32)))
+MOVE(TEMP(T34),BINOP(ADD,TEMP(T2),CONST(-8)))
+MOVE(TEMP(T35),MEM8(TEMP(T34)))
+MOVE(TEMP(T36),BINOP(MUL,TEMP(T35),CONST(8)))
+MOVE(TEMP(T37),BINOP(ADD,TEMP(T33),TEMP(T36)))
+MOVE(TEMP(T38),MEM8(TEMP(T37)))
+MOVE(TEMP(T39),CALL(NAME(_printInt),0:TEMP(T2),8:NAME(L3),16:TEMP(T38)))
+MOVE(TEMP(T40),BINOP(ADD,TEMP(T2),CONST(-8)))
+MOVE(TEMP(T41),BINOP(ADD,TEMP(T2),CONST(-8)))
+MOVE(TEMP(T42),MEM8(TEMP(T41)))
+MOVE(TEMP(T43),BINOP(ADD,TEMP(T42),CONST(1)))
+MOVE(MEM8(TEMP(T40)),TEMP(T43))
+JUMP(NAME(L13))
+LABEL(L15)
+LABEL(L12)
+
+CodeChunk:
+Frame: compiler.phase.memory.MEM$Frame@4e928fbf
+Entry Label: compiler.phase.memory.MEM$Label@352ff4da
+Exit Label: compiler.phase.memory.MEM$Label@3224a577
+Statements:
+LABEL(L16)
+MOVE(TEMP(T44),BINOP(ADD,TEMP(T4),CONST(8)))
+MOVE(TEMP(T45),MEM8(TEMP(T44)))
+MOVE(TEMP(T46),CALL(NAME(_puts),0:TEMP(T4),8:TEMP(T45)))
+MOVE(TEMP(T47),BINOP(ADD,TEMP(T4),CONST(16)))
+MOVE(TEMP(T48),MEM8(TEMP(T47)))
+MOVE(TEMP(T49),CALL(NAME(_putint),0:TEMP(T4),8:TEMP(T48)))
+MOVE(TEMP(T50),CALL(NAME(_putchar),0:TEMP(T4),8:CONST(10)))
+LABEL(L17)
+
+CodeChunk:
+Frame: compiler.phase.memory.MEM$Frame@2e32ccc5
+Entry Label: compiler.phase.memory.MEM$Label@748741cb
+Exit Label: compiler.phase.memory.MEM$Label@3e44f2a5
+Statements:
+LABEL(L18)
+MOVE(TEMP(T51),BINOP(ADD,TEMP(T6),CONST(-8)))
+MOVE(TEMP(T52),BINOP(MUL,CONST(20),CONST(8)))
+MOVE(TEMP(T53),CALL(NAME(_new),0:TEMP(T6),8:TEMP(T52)))
+MOVE(MEM8(TEMP(T51)),TEMP(T53))
+MOVE(TEMP(T54),BINOP(ADD,TEMP(T6),CONST(-8)))
+MOVE(TEMP(T55),CALL(NAME(_set_array),0:TEMP(T6),8:TEMP(T54)))
+MOVE(TEMP(T56),BINOP(ADD,TEMP(T6),CONST(-8)))
+MOVE(TEMP(T57),CALL(NAME(_print_array),0:TEMP(T6),8:TEMP(T56)))
+MOVE(TEMP(T58),BINOP(ADD,TEMP(T6),CONST(-8)))
+MOVE(TEMP(T59),MEM8(TEMP(T58)))
+MOVE(TEMP(T60),CALL(NAME(_del),0:TEMP(T6),8:TEMP(T59)))
+MOVE(TEMP(T7),CONST(0))
+JUMP(NAME(L19))
+LABEL(L19)
+
+:-) Done.

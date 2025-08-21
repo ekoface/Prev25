@@ -1,0 +1,43 @@
+fun putint(x: int): void
+fun putchar(c: char): void
+
+fun fib(n: int): int =
+
+    puts("Got here with"),
+    putint(n),
+    if n <= 1 then
+        return 1
+    end,
+
+    return fib(n-1) + fib(n - 2)
+
+fun main(): int =
+
+    let var i: int in
+        i = 0,
+        while i <= 15 do
+            puts("fib("),
+            putint(i),
+            printInt(") = " , fib(i)),
+            i = i + 1
+        end
+    end,
+    return 0
+
+fun printInt(msg: ^char, x: int): void =
+    puts(msg),
+    putint(x),
+    putchar('\0x0A')
+
+fun puts(str: ^char): void =
+    let 
+        var i: int
+        var p: ^char
+    in
+        i = 0,
+        p = str,
+        while p^ != '\0x00' do
+            putchar(p^),
+            p = {{p : int} + 1 : ^char}
+        end
+    end

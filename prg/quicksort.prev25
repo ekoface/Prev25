@@ -1,0 +1,126 @@
+# Copyright (c) 2025 Prev25 Wizards
+fun putint(n: int): void
+fun putchar(c: char): void
+fun puts(s: ^char): void
+fun malloc(size: int): ^int
+
+var N: int
+fun main(): int =
+    N = 10,
+    puts("Welcome to this shit show"),
+    let var arr: ^int in
+        arr = malloc(N * sizeof int),
+
+        set_array(arr, N),
+        puts("MADE ARRAY"),
+        print_array(arr, N),
+        puts("QUICSKCORTING"),
+        quicksort(arr, 0, N - 1),
+        print_array(arr, N),
+        if sorted(arr, N) then
+            puts("Sorted\\n")
+        else
+            puts("Not Sorted\\n")
+        end
+    end,
+    return 0
+
+fun sorted(arr: ^int, len: int): bool =
+    puts("let sort this fucker"),
+    let var i: int in
+        i = 0,
+        while i < (len - 1) do
+            if at(arr, i)^ > at(arr, i + 1)^ then
+                return false
+            end,
+            i = i + 1
+        end
+    end,
+    return true
+
+fun print_array(arr: ^int, len: int): void =
+    putchar('['),
+    let var i: int in
+        i = 0,
+        while i < len do
+            putchar(' '),
+            putint(at(arr, i)^),
+            i = i + 1
+        end
+    end,
+    putchar(' '),
+    putchar(']'),
+    putchar('\0x0A')
+
+fun set_array(arr: ^int, len: int): void =
+    let
+        var i: int
+        var tmp: int
+        var j: int
+    in
+        # Step 1: Fill the array
+        i = 0,
+        while i < len do
+            at(arr, i)^ = i,
+            i = i + 1
+        end,
+
+        # Step 2: Shuffle it in a pseudo-random way
+        i = len - 1,
+        while i > 0 do
+            # Deterministic pseudo-random index: (i * 7 + 3) mod (i + 1)
+            j = (i * 7 + 3) % len,
+
+            # Swap arr[i] and arr[j]
+            tmp = at(arr, i)^,
+            at(arr, i)^ = at(arr, j)^,
+            at(arr, j)^ = tmp,
+
+            i = i - 1
+        end
+    end
+
+fun at(arr: ^int, idx: int): ^int =
+    return {{arr: int} + (idx * (sizeof int)): ^int}
+
+fun quicksort(arr: ^int, low: int, high: int): void =
+    puts("GOT"),
+    putint(low),
+    putint(high),
+    puts("\\n"),
+    if low < high then
+        let
+            var pivot_index: int
+        in
+            pivot_index = partition(arr, low, high),
+
+            quicksort(arr, low, pivot_index - 1),
+            quicksort(arr, pivot_index + 1, high)
+        end
+    end
+
+fun partition(arr: ^int, low: int, high: int): int =
+    let
+        var pivot: int
+        var i: int
+        var j: int
+        fun swap(i: int, j: int): void =
+            let var tmp: int in
+                tmp = at(arr, i)^,
+                at(arr, i)^ = at(arr, j)^,
+                at(arr, j)^ = tmp
+            end
+    in
+        pivot = at(arr, high)^,
+        i = low - 1,
+        j = low,
+        while j < high do
+            if at(arr, j)^ < pivot then
+                i = i + 1,
+                swap(i, j)
+            end,
+            j = j + 1
+        end,
+        swap(i + 1, high),
+        return i + 1
+    end

@@ -1,0 +1,1168 @@
+'rm' -fr -fr math-*.xml math-*.html
+if java -cp ../bin:../src:../lib/antlr-4.13.2-complete.jar compiler.Compiler --xsl=../lib/xsl/ --logged-phase=all --target-phase=all  math.prev25 ; then for XML in `'ls' -1 math-*.xml` ; do xsltproc $XML -o `basename $XML xml`html; done ; fi
+:-) This is Prev25 compiler:
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@2cbb3d47
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@1198b989
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@1198b989
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@1198b989
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@1198b989
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@1198b989
+SemAn.ofType.get(defAt);int
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);^char
+SemAn.ofType.get(defAt);compiler.phase.seman.TYP$FunType@527e5409
+SemAn.ofType.get(defAt);^char
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@7ff95560
+argType got this: int
+parType: int
+Loop finished for arg: 0
+Visiting CallExpr arg: 1 compiler.phase.abstr.AST$NameExpr@22635ba0
+argType got this: int
+parType: int
+Loop finished for arg: 1
+Visiting CallExpr arg: 2 compiler.phase.abstr.AST$NameExpr@13c10b87
+argType got this: int
+parType: int
+Loop finished for arg: 2
+Visiting CallExpr arg: 3 compiler.phase.abstr.AST$NameExpr@6a01e23
+argType got this: ^char
+parType: ^char
+Loop finished for arg: 3
+Visiting CallExpr arg: 4 compiler.phase.abstr.AST$NameExpr@5a955565
+argType got this: int
+parType: int
+Loop finished for arg: 4
+Visiting CallExpr arg: 5 compiler.phase.abstr.AST$NameExpr@6293abcc
+argType got this: ^char
+parType: ^char
+Loop finished for arg: 5
+Visiting CallExpr arg: 6 compiler.phase.abstr.AST$NameExpr@7995092a
+argType got this: int
+parType: int
+Loop finished for arg: 6
+Visiting CallExpr arg: 7 compiler.phase.abstr.AST$NameExpr@7fc2413d
+argType got this: ^char
+parType: ^char
+Loop finished for arg: 7
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$AtomExpr@70be0a2b
+argType got this: ^void
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@4c15e7fd
+argType got this: int
+parType: int
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$AtomExpr@23f7d05d
+argType got this: ^void
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@7d3a22a9
+argType got this: int
+parType: int
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$AtomExpr@60704c
+argType got this: ^void
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@2a32de6c
+argType got this: int
+parType: int
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$AtomExpr@75f32542
+argType got this: ^void
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@43ee72e6
+argType got this: int
+parType: int
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$AtomExpr@4fe767f3
+argType got this: ^void
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@184cf7cf
+argType got this: int
+parType: int
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@5bfa9431
+argType got this: ^char
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@223f3642
+argType got this: ^char
+parType: ^char
+Loop finished for arg: 0
+Visiting CallExpr arg: 0 compiler.phase.abstr.AST$NameExpr@37918c79
+argType got this: ^char
+parType: ^char
+Loop finished for arg: 0
+OP is ADD
+OP is ADD
+OP is SUB
+OP is SUB
+OP is ADD
+OP is ADD
+OP is ADD
+Function: _main
+Label: L10:
+  In: []  Out: []
+Instruction: li T73, 5,   Def: T73,   Use: []
+  In: []  Out: [T73]
+Instruction: lui T74, %hi(_a),   Def: T74,   Use: []
+  In: [T73]  Out: [T74, T73]
+Instruction: addi T74, T74, %lo(_a),   Def: T74,   Use: [T74]
+  In: [T74, T73]  Out: [T74, T73]
+Instruction: sd T73, 0(T74),   Def: null,   Use: [T73, T74]
+  In: [T74, T73]  Out: []
+Instruction: li T75, 10,   Def: T75,   Use: []
+  In: []  Out: [T75]
+Instruction: lui T76, %hi(_b),   Def: T76,   Use: []
+  In: [T75]  Out: [T76, T75]
+Instruction: addi T76, T76, %lo(_b),   Def: T76,   Use: [T76]
+  In: [T76, T75]  Out: [T76, T75]
+Instruction: sd T75, 0(T76),   Def: null,   Use: [T75, T76]
+  In: [T76, T75]  Out: []
+Instruction: li T77, 3,   Def: T77,   Use: []
+  In: []  Out: [T77]
+Instruction: lui T78, %hi(_c),   Def: T78,   Use: []
+  In: [T77]  Out: [T78, T77]
+Instruction: addi T78, T78, %lo(_c),   Def: T78,   Use: [T78]
+  In: [T78, T77]  Out: [T78, T77]
+Instruction: sd T77, 0(T78),   Def: null,   Use: [T77, T78]
+  In: [T78, T77]  Out: []
+Instruction: lui T79, %hi(L1),   Def: T79,   Use: []
+  In: []  Out: [T79]
+Instruction: addi T79, T79, %lo(L1),   Def: T79,   Use: [T79]
+  In: [T79]  Out: [T79]
+Instruction: lui T80, %hi(_a_1),   Def: T80,   Use: []
+  In: [T79]  Out: [T79, T80]
+Instruction: addi T80, T80, %lo(_a_1),   Def: T80,   Use: [T80]
+  In: [T79, T80]  Out: [T79, T80]
+Instruction: sd T79, 0(T80),   Def: null,   Use: [T79, T80]
+  In: [T79, T80]  Out: []
+Instruction: lui T81, %hi(L2),   Def: T81,   Use: []
+  In: []  Out: [T81]
+Instruction: addi T81, T81, %lo(L2),   Def: T81,   Use: [T81]
+  In: [T81]  Out: [T81]
+Instruction: lui T82, %hi(_a_2),   Def: T82,   Use: []
+  In: [T81]  Out: [T81, T82]
+Instruction: addi T82, T82, %lo(_a_2),   Def: T82,   Use: [T82]
+  In: [T81, T82]  Out: [T81, T82]
+Instruction: sd T81, 0(T82),   Def: null,   Use: [T81, T82]
+  In: [T81, T82]  Out: []
+Instruction: lui T83, %hi(L3),   Def: T83,   Use: []
+  In: []  Out: [T83]
+Instruction: addi T83, T83, %lo(L3),   Def: T83,   Use: [T83]
+  In: [T83]  Out: [T83]
+Instruction: lui T84, %hi(_a_3),   Def: T84,   Use: []
+  In: [T83]  Out: [T84, T83]
+Instruction: addi T84, T84, %lo(_a_3),   Def: T84,   Use: [T84]
+  In: [T84, T83]  Out: [T84, T83]
+Instruction: sd T83, 0(T84),   Def: null,   Use: [T83, T84]
+  In: [T84, T83]  Out: []
+Instruction: lui T85, %hi(_a),   Def: T85,   Use: []
+  In: []  Out: [T85]
+Instruction: addi T85, T85, %lo(_a),   Def: T85,   Use: [T85]
+  In: [T85]  Out: [T85]
+Instruction: ld T86, 0(T85),   Def: T86,   Use: [T85]
+  In: [T85]  Out: [T86]
+Instruction: mv T4, T86,   Def: T4,   Use: T86
+  In: [T86]  Out: [T4]
+Instruction: lui T87, %hi(_a),   Def: T87,   Use: []
+  In: [T4]  Out: [T4, T87]
+Instruction: addi T87, T87, %lo(_a),   Def: T87,   Use: [T87]
+  In: [T4, T87]  Out: [T4, T87]
+Instruction: ld T88, 0(T87),   Def: T88,   Use: [T87]
+  In: [T4, T87]  Out: [T4, T88]
+Instruction: mv T5, T88,   Def: T5,   Use: T88
+  In: [T4, T88]  Out: [T4, T5]
+Instruction: add T89, T4, T5,   Def: T89,   Use: [T4, T5]
+  In: [T4, T5]  Out: [T89]
+Instruction: mv T6, T89,   Def: T6,   Use: T89
+  In: [T89]  Out: [T6]
+Instruction: lui T90, %hi(_a),   Def: T90,   Use: []
+  In: [T6]  Out: [T6, T90]
+Instruction: addi T90, T90, %lo(_a),   Def: T90,   Use: [T90]
+  In: [T6, T90]  Out: [T6, T90]
+Instruction: sd T6, 0(T90),   Def: null,   Use: [T6, T90]
+  In: [T6, T90]  Out: []
+Instruction: lui T91, %hi(_b),   Def: T91,   Use: []
+  In: []  Out: [T91]
+Instruction: addi T91, T91, %lo(_b),   Def: T91,   Use: [T91]
+  In: [T91]  Out: [T91]
+Instruction: ld T92, 0(T91),   Def: T92,   Use: [T91]
+  In: [T91]  Out: [T92]
+Instruction: mv T7, T92,   Def: T7,   Use: T92
+  In: [T92]  Out: [T7]
+Instruction: lui T93, %hi(_c),   Def: T93,   Use: []
+  In: [T7]  Out: [T7, T93]
+Instruction: addi T93, T93, %lo(_c),   Def: T93,   Use: [T93]
+  In: [T7, T93]  Out: [T7, T93]
+Instruction: ld T94, 0(T93),   Def: T94,   Use: [T93]
+  In: [T7, T93]  Out: [T7, T94]
+Instruction: mv T8, T94,   Def: T8,   Use: T94
+  In: [T7, T94]  Out: [T7, T8]
+Instruction: add T95, T7, T8,   Def: T95,   Use: [T7, T8]
+  In: [T7, T8]  Out: [T95]
+Instruction: mv T9, T95,   Def: T9,   Use: T95
+  In: [T95]  Out: [T9]
+Instruction: lui T96, %hi(_b),   Def: T96,   Use: []
+  In: [T9]  Out: [T96, T9]
+Instruction: addi T96, T96, %lo(_b),   Def: T96,   Use: [T96]
+  In: [T96, T9]  Out: [T96, T9]
+Instruction: sd T9, 0(T96),   Def: null,   Use: [T9, T96]
+  In: [T96, T9]  Out: []
+Instruction: lui T97, %hi(_a),   Def: T97,   Use: []
+  In: []  Out: [T97]
+Instruction: addi T97, T97, %lo(_a),   Def: T97,   Use: [T97]
+  In: [T97]  Out: [T97]
+Instruction: ld T98, 0(T97),   Def: T98,   Use: [T97]
+  In: [T97]  Out: [T98]
+Instruction: mv T10, T98,   Def: T10,   Use: T98
+  In: [T98]  Out: [T10]
+Instruction: lui T99, %hi(_b),   Def: T99,   Use: []
+  In: [T10]  Out: [T10, T99]
+Instruction: addi T99, T99, %lo(_b),   Def: T99,   Use: [T99]
+  In: [T10, T99]  Out: [T10, T99]
+Instruction: ld T100, 0(T99),   Def: T100,   Use: [T99]
+  In: [T10, T99]  Out: [T10, T100]
+Instruction: mv T11, T100,   Def: T11,   Use: T100
+  In: [T10, T100]  Out: [T10, T11]
+Instruction: sub T101, T10, T11,   Def: T101,   Use: [T10, T11]
+  In: [T10, T11]  Out: [T101]
+Instruction: mv T12, T101,   Def: T12,   Use: T101
+  In: [T101]  Out: [T12]
+Instruction: lui T102, %hi(_c),   Def: T102,   Use: []
+  In: [T12]  Out: [T12, T102]
+Instruction: addi T102, T102, %lo(_c),   Def: T102,   Use: [T102]
+  In: [T12, T102]  Out: [T12, T102]
+Instruction: sd T12, 0(T102),   Def: null,   Use: [T12, T102]
+  In: [T12, T102]  Out: []
+Instruction: lui T103, %hi(_a),   Def: T103,   Use: []
+  In: []  Out: [T103]
+Instruction: addi T103, T103, %lo(_a),   Def: T103,   Use: [T103]
+  In: [T103]  Out: [T103]
+Instruction: ld T104, 0(T103),   Def: T104,   Use: [T103]
+  In: [T103]  Out: [T104]
+Instruction: mv T13, T104,   Def: T13,   Use: T104
+  In: [T104]  Out: [T13]
+Instruction: lui T105, %hi(_c),   Def: T105,   Use: []
+  In: [T13]  Out: [T105, T13]
+Instruction: addi T105, T105, %lo(_c),   Def: T105,   Use: [T105]
+  In: [T105, T13]  Out: [T105, T13]
+Instruction: ld T106, 0(T105),   Def: T106,   Use: [T105]
+  In: [T105, T13]  Out: [T106, T13]
+Instruction: mv T14, T106,   Def: T14,   Use: T106
+  In: [T106, T13]  Out: [T14, T13]
+Instruction: sub T107, T13, T14,   Def: T107,   Use: [T13, T14]
+  In: [T14, T13]  Out: [T107]
+Instruction: mv T15, T107,   Def: T15,   Use: T107
+  In: [T107]  Out: [T15]
+Instruction: lui T108, %hi(_a),   Def: T108,   Use: []
+  In: [T15]  Out: [T108, T15]
+Instruction: addi T108, T108, %lo(_a),   Def: T108,   Use: [T108]
+  In: [T108, T15]  Out: [T108, T15]
+Instruction: sd T15, 0(T108),   Def: null,   Use: [T15, T108]
+  In: [T108, T15]  Out: []
+Instruction: lui T109, %hi(_a),   Def: T109,   Use: []
+  In: []  Out: [T109]
+Instruction: addi T109, T109, %lo(_a),   Def: T109,   Use: [T109]
+  In: [T109]  Out: [T109]
+Instruction: ld T110, 0(T109),   Def: T110,   Use: [T109]
+  In: [T109]  Out: [T110]
+Instruction: mv T16, T110,   Def: T16,   Use: T110
+  In: [T110]  Out: [T16]
+Instruction: lui T111, %hi(_b),   Def: T111,   Use: []
+  In: [T16]  Out: [T16, T111]
+Instruction: addi T111, T111, %lo(_b),   Def: T111,   Use: [T111]
+  In: [T16, T111]  Out: [T16, T111]
+Instruction: ld T112, 0(T111),   Def: T112,   Use: [T111]
+  In: [T16, T111]  Out: [T112, T16]
+Instruction: mv T17, T112,   Def: T17,   Use: T112
+  In: [T112, T16]  Out: [T16, T17]
+Instruction: lui T113, %hi(_c),   Def: T113,   Use: []
+  In: [T16, T17]  Out: [T16, T113, T17]
+Instruction: addi T113, T113, %lo(_c),   Def: T113,   Use: [T113]
+  In: [T16, T113, T17]  Out: [T16, T113, T17]
+Instruction: ld T114, 0(T113),   Def: T114,   Use: [T113]
+  In: [T16, T113, T17]  Out: [T114, T16, T17]
+Instruction: mv T18, T114,   Def: T18,   Use: T114
+  In: [T114, T16, T17]  Out: [T16, T18, T17]
+Instruction: lui T115, %hi(_a_1),   Def: T115,   Use: []
+  In: [T16, T18, T17]  Out: [T115, T16, T18, T17]
+Instruction: addi T115, T115, %lo(_a_1),   Def: T115,   Use: [T115]
+  In: [T115, T16, T18, T17]  Out: [T115, T16, T18, T17]
+Instruction: ld T116, 0(T115),   Def: T116,   Use: [T115]
+  In: [T115, T16, T18, T17]  Out: [T116, T16, T18, T17]
+Instruction: mv T19, T116,   Def: T19,   Use: T116
+  In: [T116, T16, T18, T17]  Out: [T16, T18, T17, T19]
+Instruction: lui T117, %hi(_b),   Def: T117,   Use: []
+  In: [T16, T18, T17, T19]  Out: [T117, T16, T18, T17, T19]
+Instruction: addi T117, T117, %lo(_b),   Def: T117,   Use: [T117]
+  In: [T117, T16, T18, T17, T19]  Out: [T117, T16, T18, T17, T19]
+Instruction: ld T118, 0(T117),   Def: T118,   Use: [T117]
+  In: [T117, T16, T18, T17, T19]  Out: [T118, T16, T18, T17, T19]
+Instruction: mv T20, T118,   Def: T20,   Use: T118
+  In: [T118, T16, T18, T17, T19]  Out: [T20, T16, T18, T17, T19]
+Instruction: lui T119, %hi(_a_2),   Def: T119,   Use: []
+  In: [T20, T16, T18, T17, T19]  Out: [T119, T20, T16, T18, T17, T19]
+Instruction: addi T119, T119, %lo(_a_2),   Def: T119,   Use: [T119]
+  In: [T119, T20, T16, T18, T17, T19]  Out: [T119, T20, T16, T18, T17, T19]
+Instruction: ld T120, 0(T119),   Def: T120,   Use: [T119]
+  In: [T119, T20, T16, T18, T17, T19]  Out: [T20, T16, T18, T17, T120, T19]
+Instruction: mv T21, T120,   Def: T21,   Use: T120
+  In: [T20, T16, T18, T17, T120, T19]  Out: [T21, T20, T16, T18, T17, T19]
+Instruction: lui T121, %hi(_c),   Def: T121,   Use: []
+  In: [T21, T20, T16, T18, T17, T19]  Out: [T21, T20, T16, T121, T18, T17, T19]
+Instruction: addi T121, T121, %lo(_c),   Def: T121,   Use: [T121]
+  In: [T21, T20, T16, T121, T18, T17, T19]  Out: [T21, T20, T16, T121, T18, T17, T19]
+Instruction: ld T122, 0(T121),   Def: T122,   Use: [T121]
+  In: [T21, T20, T16, T121, T18, T17, T19]  Out: [T21, T20, T16, T18, T122, T17, T19]
+Instruction: mv T22, T122,   Def: T22,   Use: T122
+  In: [T21, T20, T16, T18, T122, T17, T19]  Out: [T21, T20, T22, T16, T18, T17, T19]
+Instruction: lui T123, %hi(_a_3),   Def: T123,   Use: []
+  In: [T21, T20, T22, T16, T18, T17, T19]  Out: [T21, T20, T22, T123, T16, T18, T17, T19]
+Instruction: addi T123, T123, %lo(_a_3),   Def: T123,   Use: [T123]
+  In: [T21, T20, T22, T123, T16, T18, T17, T19]  Out: [T21, T20, T22, T123, T16, T18, T17, T19]
+Instruction: ld T124, 0(T123),   Def: T124,   Use: [T123]
+  In: [T21, T20, T22, T123, T16, T18, T17, T19]  Out: [T21, T20, T22, T16, T124, T18, T17, T19]
+Instruction: mv T23, T124,   Def: T23,   Use: T124
+  In: [T21, T20, T22, T16, T124, T18, T17, T19]  Out: [T21, T20, T23, T22, T16, T18, T17, T19]
+Instruction: sd T0, 32(sp),   Def: null,   Use: [T0]
+  In: [T21, T20, T23, T22, T16, T18, T17, T19]  Out: [T21, T20, T23, T22, T16, T18, T17, T19]
+Instruction: sd T16, 40(sp),   Def: null,   Use: [T16]
+  In: [T21, T20, T23, T22, T16, T18, T17, T19]  Out: [T21, T20, T23, T22, T18, T17, T19]
+Instruction: sd T17, 48(sp),   Def: null,   Use: [T17]
+  In: [T21, T20, T23, T22, T18, T17, T19]  Out: [T21, T20, T23, T22, T18, T19]
+Instruction: sd T18, 56(sp),   Def: null,   Use: [T18]
+  In: [T21, T20, T23, T22, T18, T19]  Out: [T21, T20, T23, T22, T19]
+Instruction: sd T19, 64(sp),   Def: null,   Use: [T19]
+  In: [T21, T20, T23, T22, T19]  Out: [T21, T20, T23, T22]
+Instruction: sd T20, 72(sp),   Def: null,   Use: [T20]
+  In: [T21, T20, T23, T22]  Out: [T21, T23, T22]
+Instruction: sd T21, 80(sp),   Def: null,   Use: [T21]
+  In: [T21, T23, T22]  Out: [T23, T22]
+Instruction: sd T22, 88(sp),   Def: null,   Use: [T22]
+  In: [T23, T22]  Out: [T23]
+Instruction: sd T23, 96(sp),   Def: null,   Use: [T23]
+  In: [T23]  Out: []
+Instruction: call _printer,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T125, 0(sp),   Def: T125,   Use: []
+  In: []  Out: [T125]
+Instruction: mv T24, T125,   Def: T24,   Use: T125
+  In: [T125]  Out: []
+Instruction: lui T126, %hi(_a),   Def: T126,   Use: []
+  In: []  Out: [T126]
+Instruction: addi T126, T126, %lo(_a),   Def: T126,   Use: [T126]
+  In: [T126]  Out: [T126]
+Instruction: ld T127, 0(T126),   Def: T127,   Use: [T126]
+  In: [T126]  Out: [T127]
+Instruction: mv T25, T127,   Def: T25,   Use: T127
+  In: [T127]  Out: [T25]
+Instruction: mv T1, T25,   Def: T1,   Use: T25
+  In: [T25]  Out: []
+Instruction: jal L11,   Def: null,   Use: []
+  In: []  Out: []
+Label: L11:
+  In: []  Out: []
+---------------------------
+Function: _printer
+Label: L12:
+  In: []  Out: []
+Instruction: addi T128, T2, 8,   Def: T128,   Use: [T2]
+  In: []  Out: [T128]
+Instruction: mv T26, T128,   Def: T26,   Use: T128
+  In: [T128]  Out: [T26]
+Instruction: addi T129, T2, 8,   Def: T129,   Use: [T2]
+  In: [T26]  Out: [T129, T26]
+Instruction: mv T27, T129,   Def: T27,   Use: T129
+  In: [T129, T26]  Out: [T27, T26]
+Instruction: ld T130, 0(T27),   Def: T130,   Use: [T27]
+  In: [T27, T26]  Out: [T26, T130]
+Instruction: mv T28, T130,   Def: T28,   Use: T130
+  In: [T26, T130]  Out: [T26, T28]
+Instruction: addi T131, T2, 8,   Def: T131,   Use: [T2]
+  In: [T26, T28]  Out: [T26, T28, T131]
+Instruction: mv T29, T131,   Def: T29,   Use: T131
+  In: [T26, T28, T131]  Out: [T26, T29, T28]
+Instruction: ld T132, 0(T29),   Def: T132,   Use: [T29]
+  In: [T26, T29, T28]  Out: [T26, T132, T28]
+Instruction: mv T30, T132,   Def: T30,   Use: T132
+  In: [T26, T132, T28]  Out: [T30, T26, T28]
+Instruction: add T133, T28, T30,   Def: T133,   Use: [T28, T30]
+  In: [T30, T26, T28]  Out: [T26, T133]
+Instruction: mv T31, T133,   Def: T31,   Use: T133
+  In: [T26, T133]  Out: [T31, T26]
+Instruction: sd T31, 0(T26),   Def: null,   Use: [T31, T26]
+  In: [T31, T26]  Out: []
+Instruction: addi T134, T2, 40,   Def: T134,   Use: [T2]
+  In: []  Out: [T134]
+Instruction: mv T32, T134,   Def: T32,   Use: T134
+  In: [T134]  Out: [T32]
+Instruction: addi T135, T2, 40,   Def: T135,   Use: [T2]
+  In: [T32]  Out: [T32, T135]
+Instruction: mv T33, T135,   Def: T33,   Use: T135
+  In: [T32, T135]  Out: [T32, T33]
+Instruction: ld T136, 0(T33),   Def: T136,   Use: [T33]
+  In: [T32, T33]  Out: [T32, T136]
+Instruction: mv T34, T136,   Def: T34,   Use: T136
+  In: [T32, T136]  Out: [T32, T34]
+Instruction: addi T137, T2, 56,   Def: T137,   Use: [T2]
+  In: [T32, T34]  Out: [T32, T34, T137]
+Instruction: mv T35, T137,   Def: T35,   Use: T137
+  In: [T32, T34, T137]  Out: [T32, T34, T35]
+Instruction: ld T138, 0(T35),   Def: T138,   Use: [T35]
+  In: [T32, T34, T35]  Out: [T32, T138, T34]
+Instruction: mv T36, T138,   Def: T36,   Use: T138
+  In: [T32, T138, T34]  Out: [T32, T34, T36]
+Instruction: add T139, T34, T36,   Def: T139,   Use: [T34, T36]
+  In: [T32, T34, T36]  Out: [T32, T139]
+Instruction: mv T37, T139,   Def: T37,   Use: T139
+  In: [T32, T139]  Out: [T32, T37]
+Instruction: sd T37, 0(T32),   Def: null,   Use: [T37, T32]
+  In: [T32, T37]  Out: []
+Instruction: addi T140, T2, 56,   Def: T140,   Use: [T2]
+  In: []  Out: [T140]
+Instruction: mv T38, T140,   Def: T38,   Use: T140
+  In: [T140]  Out: [T38]
+Instruction: addi T141, T2, 56,   Def: T141,   Use: [T2]
+  In: [T38]  Out: [T38, T141]
+Instruction: mv T39, T141,   Def: T39,   Use: T141
+  In: [T38, T141]  Out: [T38, T39]
+Instruction: ld T142, 0(T39),   Def: T142,   Use: [T39]
+  In: [T38, T39]  Out: [T38, T142]
+Instruction: mv T40, T142,   Def: T40,   Use: T142
+  In: [T38, T142]  Out: [T40, T38]
+Instruction: addi T143, T2, 8,   Def: T143,   Use: [T2]
+  In: [T40, T38]  Out: [T40, T38, T143]
+Instruction: mv T41, T143,   Def: T41,   Use: T143
+  In: [T40, T38, T143]  Out: [T41, T40, T38]
+Instruction: ld T144, 0(T41),   Def: T144,   Use: [T41]
+  In: [T41, T40, T38]  Out: [T40, T38, T144]
+Instruction: mv T42, T144,   Def: T42,   Use: T144
+  In: [T40, T38, T144]  Out: [T40, T42, T38]
+Instruction: add T145, T40, T42,   Def: T145,   Use: [T40, T42]
+  In: [T40, T42, T38]  Out: [T145, T38]
+Instruction: mv T43, T145,   Def: T43,   Use: T145
+  In: [T145, T38]  Out: [T43, T38]
+Instruction: sd T43, 0(T38),   Def: null,   Use: [T43, T38]
+  In: [T43, T38]  Out: []
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: []  Out: []
+Instruction: lui T146, %hi(L5),   Def: T146,   Use: []
+  In: []  Out: [T146]
+Instruction: addi T146, T146, %lo(L5),   Def: T146,   Use: [T146]
+  In: [T146]  Out: [T146]
+Instruction: sd T146, 40(sp),   Def: null,   Use: [T146]
+  In: [T146]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T147, 0(sp),   Def: T147,   Use: []
+  In: []  Out: [T147]
+Instruction: mv T44, T147,   Def: T44,   Use: T147
+  In: [T147]  Out: []
+Instruction: addi T148, T2, 8,   Def: T148,   Use: [T2]
+  In: []  Out: [T148]
+Instruction: mv T45, T148,   Def: T45,   Use: T148
+  In: [T148]  Out: [T45]
+Instruction: ld T149, 0(T45),   Def: T149,   Use: [T45]
+  In: [T45]  Out: [T149]
+Instruction: mv T46, T149,   Def: T46,   Use: T149
+  In: [T149]  Out: [T46]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T46]  Out: [T46]
+Instruction: sd T46, 40(sp),   Def: null,   Use: [T46]
+  In: [T46]  Out: []
+Instruction: call _putint,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T150, 0(sp),   Def: T150,   Use: []
+  In: []  Out: [T150]
+Instruction: mv T47, T150,   Def: T47,   Use: T150
+  In: [T150]  Out: []
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: []  Out: []
+Instruction: lui T151, %hi(L6),   Def: T151,   Use: []
+  In: []  Out: [T151]
+Instruction: addi T151, T151, %lo(L6),   Def: T151,   Use: [T151]
+  In: [T151]  Out: [T151]
+Instruction: sd T151, 40(sp),   Def: null,   Use: [T151]
+  In: [T151]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T152, 0(sp),   Def: T152,   Use: []
+  In: []  Out: [T152]
+Instruction: mv T48, T152,   Def: T48,   Use: T152
+  In: [T152]  Out: []
+Instruction: addi T153, T2, 40,   Def: T153,   Use: [T2]
+  In: []  Out: [T153]
+Instruction: mv T49, T153,   Def: T49,   Use: T153
+  In: [T153]  Out: [T49]
+Instruction: ld T154, 0(T49),   Def: T154,   Use: [T49]
+  In: [T49]  Out: [T154]
+Instruction: mv T50, T154,   Def: T50,   Use: T154
+  In: [T154]  Out: [T50]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T50]  Out: [T50]
+Instruction: sd T50, 40(sp),   Def: null,   Use: [T50]
+  In: [T50]  Out: []
+Instruction: call _putint,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T155, 0(sp),   Def: T155,   Use: []
+  In: []  Out: [T155]
+Instruction: mv T51, T155,   Def: T51,   Use: T155
+  In: [T155]  Out: []
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: []  Out: []
+Instruction: lui T156, %hi(L7),   Def: T156,   Use: []
+  In: []  Out: [T156]
+Instruction: addi T156, T156, %lo(L7),   Def: T156,   Use: [T156]
+  In: [T156]  Out: [T156]
+Instruction: sd T156, 40(sp),   Def: null,   Use: [T156]
+  In: [T156]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T157, 0(sp),   Def: T157,   Use: []
+  In: []  Out: [T157]
+Instruction: mv T52, T157,   Def: T52,   Use: T157
+  In: [T157]  Out: []
+Instruction: addi T158, T2, 16,   Def: T158,   Use: [T2]
+  In: []  Out: [T158]
+Instruction: mv T53, T158,   Def: T53,   Use: T158
+  In: [T158]  Out: [T53]
+Instruction: ld T159, 0(T53),   Def: T159,   Use: [T53]
+  In: [T53]  Out: [T159]
+Instruction: mv T54, T159,   Def: T54,   Use: T159
+  In: [T159]  Out: [T54]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T54]  Out: [T54]
+Instruction: sd T54, 40(sp),   Def: null,   Use: [T54]
+  In: [T54]  Out: []
+Instruction: call _putint,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T160, 0(sp),   Def: T160,   Use: []
+  In: []  Out: [T160]
+Instruction: mv T55, T160,   Def: T55,   Use: T160
+  In: [T160]  Out: []
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: []  Out: []
+Instruction: lui T161, %hi(L8),   Def: T161,   Use: []
+  In: []  Out: [T161]
+Instruction: addi T161, T161, %lo(L8),   Def: T161,   Use: [T161]
+  In: [T161]  Out: [T161]
+Instruction: sd T161, 40(sp),   Def: null,   Use: [T161]
+  In: [T161]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T162, 0(sp),   Def: T162,   Use: []
+  In: []  Out: [T162]
+Instruction: mv T56, T162,   Def: T56,   Use: T162
+  In: [T162]  Out: []
+Instruction: addi T163, T2, 24,   Def: T163,   Use: [T2]
+  In: []  Out: [T163]
+Instruction: mv T57, T163,   Def: T57,   Use: T163
+  In: [T163]  Out: [T57]
+Instruction: ld T164, 0(T57),   Def: T164,   Use: [T57]
+  In: [T57]  Out: [T164]
+Instruction: mv T58, T164,   Def: T58,   Use: T164
+  In: [T164]  Out: [T58]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T58]  Out: [T58]
+Instruction: sd T58, 40(sp),   Def: null,   Use: [T58]
+  In: [T58]  Out: []
+Instruction: call _putint,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T165, 0(sp),   Def: T165,   Use: []
+  In: []  Out: [T165]
+Instruction: mv T59, T165,   Def: T59,   Use: T165
+  In: [T165]  Out: []
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: []  Out: []
+Instruction: lui T166, %hi(L9),   Def: T166,   Use: []
+  In: []  Out: [T166]
+Instruction: addi T166, T166, %lo(L9),   Def: T166,   Use: [T166]
+  In: [T166]  Out: [T166]
+Instruction: sd T166, 40(sp),   Def: null,   Use: [T166]
+  In: [T166]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T167, 0(sp),   Def: T167,   Use: []
+  In: []  Out: [T167]
+Instruction: mv T60, T167,   Def: T60,   Use: T167
+  In: [T167]  Out: []
+Instruction: addi T168, T2, 56,   Def: T168,   Use: [T2]
+  In: []  Out: [T168]
+Instruction: mv T61, T168,   Def: T61,   Use: T168
+  In: [T168]  Out: [T61]
+Instruction: ld T169, 0(T61),   Def: T169,   Use: [T61]
+  In: [T61]  Out: [T169]
+Instruction: mv T62, T169,   Def: T62,   Use: T169
+  In: [T169]  Out: [T62]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T62]  Out: [T62]
+Instruction: sd T62, 40(sp),   Def: null,   Use: [T62]
+  In: [T62]  Out: []
+Instruction: call _putint,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T170, 0(sp),   Def: T170,   Use: []
+  In: []  Out: [T170]
+Instruction: mv T63, T170,   Def: T63,   Use: T170
+  In: [T170]  Out: []
+Instruction: addi T171, T2, 32,   Def: T171,   Use: [T2]
+  In: []  Out: [T171]
+Instruction: mv T64, T171,   Def: T64,   Use: T171
+  In: [T171]  Out: [T64]
+Instruction: ld T172, 0(T64),   Def: T172,   Use: [T64]
+  In: [T64]  Out: [T172]
+Instruction: mv T65, T172,   Def: T65,   Use: T172
+  In: [T172]  Out: [T65]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T65]  Out: [T65]
+Instruction: sd T65, 40(sp),   Def: null,   Use: [T65]
+  In: [T65]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T173, 0(sp),   Def: T173,   Use: []
+  In: []  Out: [T173]
+Instruction: mv T66, T173,   Def: T66,   Use: T173
+  In: [T173]  Out: []
+Instruction: addi T174, T2, 48,   Def: T174,   Use: [T2]
+  In: []  Out: [T174]
+Instruction: mv T67, T174,   Def: T67,   Use: T174
+  In: [T174]  Out: [T67]
+Instruction: ld T175, 0(T67),   Def: T175,   Use: [T67]
+  In: [T67]  Out: [T175]
+Instruction: mv T68, T175,   Def: T68,   Use: T175
+  In: [T175]  Out: [T68]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T68]  Out: [T68]
+Instruction: sd T68, 40(sp),   Def: null,   Use: [T68]
+  In: [T68]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T176, 0(sp),   Def: T176,   Use: []
+  In: []  Out: [T176]
+Instruction: mv T69, T176,   Def: T69,   Use: T176
+  In: [T176]  Out: []
+Instruction: addi T177, T2, 64,   Def: T177,   Use: [T2]
+  In: []  Out: [T177]
+Instruction: mv T70, T177,   Def: T70,   Use: T177
+  In: [T177]  Out: [T70]
+Instruction: ld T178, 0(T70),   Def: T178,   Use: [T70]
+  In: [T70]  Out: [T178]
+Instruction: mv T71, T178,   Def: T71,   Use: T178
+  In: [T178]  Out: [T71]
+Instruction: sd T2, 32(sp),   Def: null,   Use: [T2]
+  In: [T71]  Out: [T71]
+Instruction: sd T71, 40(sp),   Def: null,   Use: [T71]
+  In: [T71]  Out: []
+Instruction: call _puts,   Def: null,   Use: []
+  In: []  Out: []
+Instruction: ld T179, 0(sp),   Def: T179,   Use: []
+  In: []  Out: [T179]
+Instruction: mv T72, T179,   Def: T72,   Use: T179
+  In: [T179]  Out: []
+Instruction: li T180, 1,   Def: T180,   Use: []
+  In: []  Out: [T180]
+Instruction: mv T3, T180,   Def: T3,   Use: T180
+  In: [T180]  Out: []
+Instruction: jal L13,   Def: null,   Use: []
+  In: []  Out: []
+Label: L13:
+  In: []  Out: []
+---------------------------
+Interference Graph for function: _main
+T109 -> []
+T107 -> []
+T108 -> [T15]
+T105 -> [T13]
+T106 -> [T13]
+T103 -> []
+T104 -> []
+T21 -> [T20, T23, T22, T16, T123, T124, T18, T121, T17, T122, T19]
+T20 -> [T119, T21, T23, T22, T16, T123, T124, T18, T121, T17, T122, T19, T120]
+T23 -> [T21, T20, T22, T16, T18, T17, T19]
+T22 -> [T21, T20, T23, T16, T123, T124, T18, T17, T19]
+T25 -> []
+T24 -> []
+T112 -> [T16]
+T113 -> [T16, T17]
+T110 -> []
+T111 -> [T16]
+T74 -> [T73]
+T73 -> [T74]
+T76 -> [T75]
+T75 -> [T76]
+T78 -> [T77]
+T77 -> [T78]
+T79 -> [T80]
+T101 -> []
+T102 -> [T12]
+T100 -> [T10]
+T127 -> []
+T125 -> []
+T126 -> []
+T81 -> [T82]
+T80 -> [T79]
+T83 -> [T84]
+T82 -> [T81]
+T85 -> []
+T84 -> [T83]
+T87 -> [T4]
+T86 -> []
+T89 -> []
+T88 -> [T4]
+T0 -> []
+T1 -> []
+T4 -> [T5, T87, T88]
+T5 -> [T4]
+T118 -> [T16, T18, T17, T19]
+T6 -> [T90]
+T119 -> [T20, T16, T18, T17, T19]
+T7 -> [T8, T94, T93]
+T116 -> [T16, T18, T17]
+T8 -> [T7]
+T117 -> [T16, T18, T17, T19]
+T9 -> [T96]
+T114 -> [T16, T17]
+T115 -> [T16, T18, T17]
+T90 -> [T6]
+T92 -> []
+T91 -> []
+T94 -> [T7]
+T93 -> [T7]
+T96 -> [T9]
+T95 -> []
+T10 -> [T99, T11, T100]
+T98 -> []
+T97 -> []
+T12 -> [T102]
+T11 -> [T10]
+T99 -> [T10]
+T14 -> [T13]
+T13 -> [T105, T106, T14]
+T123 -> [T21, T20, T22, T16, T18, T17, T19]
+T16 -> [T118, T119, T116, T117, T114, T115, T21, T20, T23, T22, T112, T123, T113, T124, T18, T121, T111, T17, T122, T19, T120]
+T124 -> [T21, T20, T22, T16, T18, T17, T19]
+T15 -> [T108]
+T121 -> [T21, T20, T16, T18, T17, T19]
+T18 -> [T118, T119, T116, T117, T115, T21, T20, T23, T22, T16, T123, T124, T121, T17, T122, T19, T120]
+T122 -> [T21, T20, T16, T18, T17, T19]
+T17 -> [T118, T119, T116, T117, T114, T115, T21, T20, T23, T22, T16, T123, T113, T124, T18, T121, T122, T19, T120]
+T120 -> [T20, T16, T18, T17, T19]
+T19 -> [T118, T119, T117, T21, T20, T23, T22, T16, T123, T124, T18, T121, T17, T122, T120]
+---------------------------
+Interference Graph for function: _printer
+T61 -> []
+T60 -> []
+T63 -> []
+T62 -> []
+T65 -> []
+T64 -> []
+T67 -> []
+T66 -> []
+T69 -> []
+T68 -> []
+T70 -> []
+T72 -> []
+T71 -> []
+T180 -> []
+T129 -> [T26]
+T128 -> []
+T134 -> []
+T135 -> [T32]
+T132 -> [T26, T28]
+T133 -> [T26]
+T130 -> [T26]
+T131 -> [T26, T28]
+T2 -> []
+T3 -> []
+T149 -> []
+T147 -> []
+T148 -> []
+T27 -> [T26]
+T156 -> []
+T26 -> [T30, T129, T31, T27, T29, T132, T28, T133, T130, T131]
+T157 -> []
+T29 -> [T26, T28]
+T154 -> []
+T28 -> [T30, T26, T29, T132, T131]
+T155 -> []
+T152 -> []
+T153 -> []
+T150 -> []
+T151 -> []
+T138 -> [T32, T34]
+T139 -> [T32]
+T136 -> [T32]
+T137 -> [T32, T34]
+T30 -> [T26, T28]
+T32 -> [T34, T138, T33, T139, T136, T36, T137, T35, T135, T37]
+T31 -> [T26]
+T34 -> [T32, T138, T36, T137, T35]
+T33 -> [T32]
+T36 -> [T32, T34]
+T35 -> [T32, T34]
+T145 -> [T38]
+T38 -> [T41, T40, T43, T42, T145, T143, T39, T144, T141, T142]
+T37 -> [T32]
+T146 -> []
+T143 -> [T40, T38]
+T144 -> [T40, T38]
+T39 -> [T38]
+T141 -> [T38]
+T142 -> [T38]
+T140 -> []
+T169 -> []
+T41 -> [T40, T38]
+T170 -> []
+T40 -> [T41, T42, T38, T143, T144]
+T171 -> []
+T43 -> [T38]
+T42 -> [T40, T38]
+T45 -> []
+T44 -> []
+T47 -> []
+T46 -> []
+T49 -> []
+T178 -> []
+T48 -> []
+T179 -> []
+T176 -> []
+T177 -> []
+T174 -> []
+T175 -> []
+T172 -> []
+T173 -> []
+T158 -> []
+T159 -> []
+T50 -> []
+T52 -> []
+T51 -> []
+T160 -> []
+T54 -> []
+T53 -> []
+T56 -> []
+T55 -> []
+T58 -> []
+T57 -> []
+T167 -> []
+T59 -> []
+T168 -> []
+T165 -> []
+T166 -> []
+T163 -> []
+T164 -> []
+T161 -> []
+T162 -> []
+---------------------------
+Processing chunk: _main
+No spills detected in chunk _mainspill 80
+Old instruction: sd T73, 0(T74)
+operands: [t1, t2]
+old_instr: [sd, T73, 0(T74)]
+Offset: 0
+new_instr: sd t1, 0(t2)
+Old instruction: sd T75, 0(T76)
+operands: [t1, t2]
+old_instr: [sd, T75, 0(T76)]
+Offset: 0
+new_instr: sd t1, 0(t2)
+Old instruction: sd T77, 0(T78)
+operands: [t1, t2]
+old_instr: [sd, T77, 0(T78)]
+Offset: 0
+new_instr: sd t1, 0(t2)
+Old instruction: sd T79, 0(T80)
+operands: [t2, t1]
+old_instr: [sd, T79, 0(T80)]
+Offset: 0
+new_instr: sd t2, 0(t1)
+Old instruction: sd T81, 0(T82)
+operands: [t2, t1]
+old_instr: [sd, T81, 0(T82)]
+Offset: 0
+new_instr: sd t2, 0(t1)
+Old instruction: sd T83, 0(T84)
+operands: [t2, t1]
+old_instr: [sd, T83, 0(T84)]
+Offset: 0
+new_instr: sd t2, 0(t1)
+Old instruction: sd T6, 0(T90)
+operands: [t2, t1]
+old_instr: [sd, T6, 0(T90)]
+Offset: 0
+new_instr: sd t2, 0(t1)
+Old instruction: sd T9, 0(T96)
+operands: [t2, t1]
+old_instr: [sd, T9, 0(T96)]
+Offset: 0
+new_instr: sd t2, 0(t1)
+Old instruction: sd T12, 0(T102)
+operands: [t1, t2]
+old_instr: [sd, T12, 0(T102)]
+Offset: 0
+new_instr: sd t1, 0(t2)
+Old instruction: sd T15, 0(T108)
+operands: [t1, t2]
+old_instr: [sd, T15, 0(T108)]
+Offset: 0
+new_instr: sd t1, 0(t2)
+Old instruction: sd T0, 32(sp)
+operands: [s0]
+old_instr: [sd, T0, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T16, 40(sp)
+operands: [t5]
+old_instr: [sd, T16, 40(sp)]
+Offset: 40
+new_instr: sd t5, 40(sp)
+Old instruction: sd T17, 48(sp)
+operands: [t3]
+old_instr: [sd, T17, 48(sp)]
+Offset: 48
+new_instr: sd t3, 48(sp)
+Old instruction: sd T18, 56(sp)
+operands: [t4]
+old_instr: [sd, T18, 56(sp)]
+Offset: 56
+new_instr: sd t4, 56(sp)
+Old instruction: sd T19, 64(sp)
+operands: [t1]
+old_instr: [sd, T19, 64(sp)]
+Offset: 64
+new_instr: sd t1, 64(sp)
+Old instruction: sd T20, 72(sp)
+operands: [a3]
+old_instr: [sd, T20, 72(sp)]
+Offset: 72
+new_instr: sd a3, 72(sp)
+Old instruction: sd T21, 80(sp)
+operands: [a2]
+old_instr: [sd, T21, 80(sp)]
+Offset: 80
+new_instr: sd a2, 80(sp)
+Old instruction: sd T22, 88(sp)
+operands: [t6]
+old_instr: [sd, T22, 88(sp)]
+Offset: 88
+new_instr: sd t6, 88(sp)
+Old instruction: sd T23, 96(sp)
+operands: [t2]
+old_instr: [sd, T23, 96(sp)]
+Offset: 96
+new_instr: sd t2, 96(sp)
+Processing chunk: _printer
+No spills detected in chunk _printerspill 24
+Old instruction: sd T31, 0(T26)
+operands: [t1, t3]
+old_instr: [sd, T31, 0(T26)]
+Offset: 0
+new_instr: sd t1, 0(t3)
+Old instruction: sd T37, 0(T32)
+operands: [t1, t3]
+old_instr: [sd, T37, 0(T32)]
+Offset: 0
+new_instr: sd t1, 0(t3)
+Old instruction: sd T43, 0(T38)
+operands: [t1, t3]
+old_instr: [sd, T43, 0(T38)]
+Offset: 0
+new_instr: sd t1, 0(t3)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T146, 40(sp)
+operands: [t1]
+old_instr: [sd, T146, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T46, 40(sp)
+operands: [t1]
+old_instr: [sd, T46, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T151, 40(sp)
+operands: [t1]
+old_instr: [sd, T151, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T50, 40(sp)
+operands: [t1]
+old_instr: [sd, T50, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T156, 40(sp)
+operands: [t1]
+old_instr: [sd, T156, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T54, 40(sp)
+operands: [t1]
+old_instr: [sd, T54, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T161, 40(sp)
+operands: [t1]
+old_instr: [sd, T161, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T58, 40(sp)
+operands: [t1]
+old_instr: [sd, T58, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T166, 40(sp)
+operands: [t1]
+old_instr: [sd, T166, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T62, 40(sp)
+operands: [t1]
+old_instr: [sd, T62, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T65, 40(sp)
+operands: [t1]
+old_instr: [sd, T65, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T68, 40(sp)
+operands: [t1]
+old_instr: [sd, T68, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+Old instruction: sd T2, 32(sp)
+operands: [s0]
+old_instr: [sd, T2, 32(sp)]
+Offset: 32
+new_instr: sd s0, 32(sp)
+Old instruction: sd T71, 40(sp)
+operands: [t1]
+old_instr: [sd, T71, 40(sp)]
+Offset: 40
+new_instr: sd t1, 40(sp)
+return address is T1
+Temp to register mapping for _main: {T109=t1, T107=t1, T108=t2, T105=t2, T106=t2, T103=t1, T104=t1, T21=a2, T20=a3, T23=t2, T22=t6, T25=t1, T24=t1, T112=t1, T113=t1, T110=t1, T111=t1, T74=t2, T73=t1, T76=t2, T75=t1, T78=t2, T77=t1, T79=t2, T101=t1, T102=t2, T100=t1, T127=t1, T125=t1, T126=t1, T81=t2, T80=t1, T83=t2, T82=t1, T85=t1, T84=t1, T87=t1, T86=t1, T89=t1, T88=t1, T4=t2, T5=t1, T6=t2, T118=t2, T7=t2, T119=t2, T8=t1, T116=t1, T9=t2, T117=t2, T114=t1, T115=t1, T90=t1, T92=t1, T91=t1, T94=t1, T93=t1, T96=t1, T95=t1, T98=t1, T10=t2, T97=t1, T12=t1, T99=t1, T11=t1, T14=t2, T13=t1, T16=t5, T123=t2, T15=t1, T124=t2, T18=t4, T121=t2, T17=t3, T122=t2, T19=t1, T120=t2}
+Used registers for _main: [a2, a3, t1, t2, t3, t4, t5, t6]
+Frame size for _main: 152
+    addi s0, sp, 152
+FP register for _main: T0
+frameSize is 152
+Return value register for _main: T1
+return address is T3
+Temp to register mapping for _printer: {T61=t1, T60=t1, T63=t1, T62=t1, T65=t1, T64=t1, T67=t1, T66=t1, T69=t1, T68=t1, T70=t1, T72=t1, T71=t1, T180=t1, T129=t1, T128=t1, T134=t1, T135=t1, T132=t1, T133=t1, T130=t1, T131=t1, T149=t1, T147=t1, T148=t1, T156=t1, T27=t1, T157=t1, T26=t3, T154=t1, T29=t1, T155=t1, T28=t2, T152=t1, T153=t1, T150=t1, T151=t1, T138=t1, T139=t1, T136=t1, T137=t1, T30=t1, T32=t3, T31=t1, T34=t2, T33=t1, T36=t1, T35=t1, T38=t3, T145=t1, T146=t1, T37=t1, T143=t1, T39=t1, T144=t1, T141=t1, T142=t1, T140=t1, T169=t1, T170=t1, T41=t1, T171=t1, T40=t2, T43=t1, T42=t1, T45=t1, T44=t1, T47=t1, T46=t1, T178=t1, T49=t1, T179=t1, T48=t1, T176=t1, T177=t1, T174=t1, T175=t1, T172=t1, T173=t1, T158=t1, T159=t1, T50=t1, T52=t1, T160=t1, T51=t1, T54=t1, T53=t1, T56=t1, T55=t1, T58=t1, T57=t1, T167=t1, T168=t1, T59=t1, T165=t1, T166=t1, T163=t1, T164=t1, T161=t1, T162=t1}
+Used registers for _printer: [t1, t2, t3]
+Frame size for _printer: 56
+    addi s0, sp, 56
+FP register for _printer: T2
+frameSize is 56
+Return value register for _printer: T3
+Final Assembly Code:
+Final assembly code written to _final_code.txt
+:-) Done.

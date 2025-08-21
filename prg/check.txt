@@ -1,0 +1,208 @@
+.globl _start
+_start:
+    li sp, 0x7ffffff0
+    li a0, 0
+    sw a0, 0(sp)
+    call _main
+    lw a0, 0(sp)
+    li a7, 93
+    ecall
+
+.data
+L2: .asciz "fib("
+L3: .asciz ") = "
+
+.text
+_fib:
+    addi sp, sp, -64
+    sw ra, 44(sp)
+    sw s0, 40(sp)
+    sw t1, 36(sp)
+    sw t2, 32(sp)
+    addi s0, sp, 64
+    L5:
+    addi t1, s0, 8
+    ld t1, 0(t1)
+    li t2, 1
+    slt t1, t2, t1
+    xori t1, t1, 0
+    beq t1, t0, L7
+    jal L16
+    L16:
+    jal L8
+    L7:
+    li t1, 1
+    sd t1, 0(s0)
+    jal L6
+    jal L8
+    L8:
+    addi t1, s0, 8
+    ld t1, 0(t1)
+    addi t1, t1, -1
+    sd s0, 0(sp)
+    sd t1, 8(sp)
+    call _fib
+    ld t1, 0(sp)
+    mv t2, t1
+    addi t1, s0, 8
+    ld t1, 0(t1)
+    addi t1, t1, -2
+    sd s0, 0(sp)
+    sd t1, 8(sp)
+    call _fib
+    ld t1, 0(sp)
+    add t1, t2, t1
+    sd t1, 0(s0)
+    jal L6
+    L6:
+    lw t2, 32(sp)
+    lw t1, 36(sp)
+    lw s0, 40(sp)
+    lw ra, 44(sp)
+    addi sp, sp, 64
+    jr ra
+
+.text
+_main:
+    addi sp, sp, -72
+    sw ra, 52(sp)
+    sw s0, 48(sp)
+    sw t1, 44(sp)
+    sw t2, 40(sp)
+    addi s0, sp, 72
+    L9:
+    addi t1, s0, -8
+    li t2, 0
+    sd t2, 0(t1)
+    L11:
+    addi t1, s0, -8
+    ld t1, 0(t1)
+    li t2, 10
+    slt t1, t2, t1
+    xori t1, t1, 0
+    beq t1, t0, L12
+    jal L17
+    L17:
+    jal L13
+    L12:
+    sd s0, 0(sp)
+    lui t1, %hi(L2)
+    addi t1, t1, %lo(L2)
+    sd t1, 8(sp)
+    call _puts
+    ld t1, 0(sp)
+    addi t1, s0, -8
+    ld t1, 0(t1)
+    sd s0, 0(sp)
+    sd t1, 8(sp)
+    call _putint
+    ld t1, 0(sp)
+    addi t1, s0, -8
+    ld t1, 0(t1)
+    sd s0, 0(sp)
+    sd t1, 8(sp)
+    call _fib
+    ld t1, 0(sp)
+    sd s0, 0(sp)
+    lui t2, %hi(L3)
+    addi t2, t2, %lo(L3)
+    sd t2, 8(sp)
+    sd t1, 16(sp)
+    call _printInt
+    ld t1, 0(sp)
+    addi t1, s0, -8
+    mv t2, t1
+    addi t1, s0, -8
+    ld t1, 0(t1)
+    addi t1, t1, 1
+    sd t1, 0(t2)
+    jal L11
+    L13:
+    li t1, 0
+    sd t1, 0(s0)
+    jal L10
+    L10:
+    lw t2, 40(sp)
+    lw t1, 44(sp)
+    lw s0, 48(sp)
+    lw ra, 52(sp)
+    addi sp, sp, 72
+    li a7, 10
+    ecall
+
+.text
+_printInt:
+    addi sp, sp, -56
+    sw ra, 40(sp)
+    sw s0, 36(sp)
+    sw t1, 32(sp)
+    addi s0, sp, 56
+    L14:
+    addi t1, s0, 8
+    ld t1, 0(t1)
+    sd s0, 0(sp)
+    sd t1, 8(sp)
+    call _puts
+    ld t1, 0(sp)
+    addi t1, s0, 16
+    ld t1, 0(t1)
+    sd s0, 0(sp)
+    sd t1, 8(sp)
+    call _putint
+    ld t1, 0(sp)
+    sd s0, 0(sp)
+    li t1, 10
+    sd t1, 8(sp)
+    call _putchar
+    ld t1, 0(sp)
+    L15:
+    lw t1, 32(sp)
+    lw s0, 36(sp)
+    lw ra, 40(sp)
+    addi sp, sp, 56
+    jr ra
+
+
+# Print Integer Helper Function
+_putint:
+    sw a0, -8(sp)
+    sw a7, -16(sp)
+    lw a0, 8(sp)
+    li a7, 1
+    ecall
+    lw a0, -8(sp)
+    lw a7, -16(sp)
+    ret
+
+# Print Character Helper Function
+_putchar:
+    sw a0, -8(sp)
+    sw a7, -16(sp)
+    lw a0, 8(sp)
+    li a7, 11
+    ecall
+    lw a0, -8(sp)
+    lw a7, -16(sp)
+    ret
+
+# Print String Helper Function
+_puts:
+    sw a0, -8(sp)
+    sw a7, -16(sp)
+    lw a0, 8(sp)
+    li a7, 4
+    ecall
+    lw a0, -8(sp)
+    lw a7, -16(sp)
+    ret
+
+# Native Malloc Function
+_malloc:
+    sw a0, -8(sp)
+    sw tp, 0(sp)
+    lw a0, 8(sp)
+    add tp, tp, a0
+    andi tp, tp, -8
+    addi tp, tp, 8
+    lw a0, -8(sp)
+    ret

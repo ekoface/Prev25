@@ -1,0 +1,83 @@
+.globl _start
+_start:
+    li sp, 0x7ffffff0
+    li a0, 0
+    sd a0, 0(sp)
+    call _main
+    ld a0, 0(sp)
+    li a7, 93
+    ecall
+
+.data
+L1: .asciz "Hello World
+"
+
+.text
+_main:
+    addi sp, sp, -40
+    sd ra, 32(sp)
+    sd s0, 24(sp)
+    sd t1, 16(sp)
+    addi s0, sp, 40
+    L2:
+    sd s0, 0(sp)
+    lui t1, %hi(L1)
+    addi t1, t1, %lo(L1)
+    sd t1, 8(sp)
+    call _puts
+    ld t1, 0(sp)
+    li t1, 0
+    sd t1, 0(s0)
+    jal L3
+    L3:
+    ld t1, 16(sp)
+    ld s0, 24(sp)
+    ld ra, 32(sp)
+    addi sp, sp, 40
+    li a7, 10
+    ecall
+
+
+# Print Integer Helper Function
+_putint:
+    sd a0, -8(sp)
+    sd a7, -16(sp)
+    ld a0, 8(sp)
+    li a7, 1
+    ecall
+    ld a0, -8(sp)
+    ld a7, -16(sp)
+    ret
+
+# Print Character Helper Function
+_putchar:
+    sd a0, -8(sp)
+    sd a7, -16(sp)
+    ld a0, 8(sp)
+    li a7, 11
+    ecall
+    ld a0, -8(sp)
+    ld a7, -16(sp)
+    ret
+
+# Print String Helper Function
+_puts:
+    sd a0, -8(sp)
+    sd a7, -16(sp)
+    ld a0, 8(sp)
+    li a7, 4
+    ecall
+    ld a0, -8(sp)
+    ld a7, -16(sp)
+    ret
+
+# Native Malloc Function
+_malloc:
+    sd a0, -8(sp)
+    sd tp, 0(sp)
+    ld a0, 8(sp)
+    add tp, tp, a0
+    andi tp, tp, -8
+    addi tp, tp, 8
+    ld a0, -8(sp)
+    ret

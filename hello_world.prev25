@@ -1,0 +1,18 @@
+fun putchar(c: char): void
+
+fun main(): int =
+    puts("Hello World\0x0A"),
+    return 0
+
+fun puts(str: ^char): void =
+    let 
+        var i: int
+        var p: ^char
+    in
+        i = 0,
+        p = str,
+        while p^ != '\0x00' do
+            putchar(p^),
+            p = {{p : int} + 1 : ^char}
+        end
+    end

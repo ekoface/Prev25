@@ -1,0 +1,43 @@
+# Copyright (c) 2025 Prev25 Wizards
+fun putint(x: int): void
+fun puts(str: ^char): void
+var a : int
+var b : int
+var c : int
+var a_1 : ^char
+var a_2 : ^char
+var a_3 : ^char
+fun main(): int =
+    a = 5, 
+    b = 10,
+    c = 3,
+    a_1 = "prvi ",
+    a_2 = "drugi ",
+    a_3 = "tretji ",
+    a = a + a,
+    b = b + c ,
+    c = a-b,
+    a = a - c,
+    printer(a,b,c,a_1,b,a_2,c,a_3),
+   
+    return a
+
+
+fun printer(a : int,l : int,k : int, a_1: ^char,b: int, a_2: ^char,c:int, a_3: ^char) : int = 
+    a = a + a,
+    b = b + c,
+    c = c + a,
+    puts("gredo taole: "),
+    putint(a),
+    puts(" "),
+    putint(b),
+    puts(" "),
+    putint(l),
+    puts(" "),
+    putint(k),
+    puts(" "),
+    putint(c),
+    puts(a_1),
+    puts(a_2),
+    puts(a_3),
+    return 1
