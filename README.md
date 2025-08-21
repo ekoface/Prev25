@@ -1,1 +1,1 @@
-Prevajalnik prev25. Dokumentacija *.pdf
+Prevajalnik prev25. Dokumentacija final.pdf.
